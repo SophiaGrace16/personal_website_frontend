@@ -2,6 +2,10 @@ Components keep your code dry
 Actions are where your fetches live
 containers are the larger
 
+
+- Create a route and hard code what I want in it
+- comments as CRUD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

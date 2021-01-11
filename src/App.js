@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './containers/pages/Home';
+import Link from './containers/pages/Link';
+import Project from './containers/pages/Project';
+import Resume from './containers/pages/Resume';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component {
+
+  constructor() {
+
+    super();
+    }
+
+    render(){
+      return (
+        <Router>
+        <NavBar />
+          <div className="container">
+            <Switch>
+              <Route exact path="/" component={ Home } />
+              <Route exact path="/links" component={ Link } />
+              <Route exact path="/resume" component={ Resume } />
+              <Route exact path="/projects" component={ Project } />
+              <Route exact path="/pets/:id" render={ props => <PetShow {...props} pets={ this.state.pets } />} />
+            </Switch>
+          </div>
+        </Router>
+      );
+    }
+  }
 
 export default App;
