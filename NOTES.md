@@ -1,3 +1,7 @@
+Components keep your code dry
+Actions are where your fetches live
+containers are the larger
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
