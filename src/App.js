@@ -8,22 +8,21 @@ import './App.css';
 
 class App extends Component {
 
-  constructor() {
+  // constructor() {
 
-    super();
-    }
+  //   super();
+  //   }
 
     render(){
       return (
         <Router>
-        <NavBar />
           <div className="container">
             <Switch>
               <Route exact path="/" component={ Home } />
               <Route exact path="/links" component={ Link } />
               <Route exact path="/resume" component={ Resume } />
               <Route exact path="/projects" component={ Project } />
-              <Route exact path="/pets/:id" render={ props => <PetShow {...props} pets={ this.state.pets } />} />
+              {/* <Route exact path="/pets/:id" render={ props => <PetShow {...props} pets={ this.state.pets } />} /> */}
             </Switch>
           </div>
         </Router>
