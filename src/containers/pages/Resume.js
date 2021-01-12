@@ -11,7 +11,6 @@ export class Resume extends Component {
   componentDidMount(){
     this.props.fetchEducations()
     this.props.fetchExperiences()
-    this.props.fetchProjects()
   }
 
   render() {
