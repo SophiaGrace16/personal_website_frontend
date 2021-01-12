@@ -1,14 +1,11 @@
 export default (state = [], action) => {
     switch(action.type){
-        case "SET_PETS":
+        case "SET_EDUCATIONS":
             return [...action.payload]
-        case "ADD_PET":
-            return [...state, action.payload]
-        case "REMOVE_PET":
-            let newPets = state.filter(pet => pet.id !== action.payload)
-            return [...newPets]
-        case "EDIT_PET":
-            // do something
+        case "SET_EXPERIENCES":
+            return [...action.payload]
+        case "SET_PROJECTS":
+            return [...action.payload]
         default:
             return state
     }

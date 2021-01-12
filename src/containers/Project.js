@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { fetchProjects } from '../actions/index'
-import Project from '../components/resumeParts/Projects'
+import Project from '../components/Project'
 import { connect } from 'react-redux'
 
 export class Resume extends Component {

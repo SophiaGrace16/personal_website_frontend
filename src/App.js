@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './containers/pages/Home';
-import Link from './containers/pages/Link';
-import Project from './containers/pages/Project';
-import Resume from './containers/pages/Resume';
+import Home from './containers/Home';
+import Link from './containers/Link';
+import Project from './containers/Project';
+import Resume from './containers/Resume';
 import './App.css';
 
 class App extends Component {
