@@ -42,7 +42,7 @@ export class Resume extends Component {
 const mapStateToProps = state => {
   return {
     educations: state.educations,
-    experiences: state.experiences,
+    experiences: state.experiences
   }
 }
 
