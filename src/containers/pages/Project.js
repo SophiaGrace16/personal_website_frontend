@@ -1,4 +1,32 @@
 import React, { Component } from 'react'
 import { fetchProjects } from '../actions/index'
-import Projects from '../components/resumeParts/Projects'
+import Project from '../components/resumeParts/Projects'
 import { connect } from 'react-redux'
+
+export class Resume extends Component {
+    componentDidMount(){
+      this.props.fetchEducations()
+      this.props.fetchExperiences()
+    }
+  
+    render() {
+      const projects = this.props.projects.map(( project, i ) => <Project key={i} project={ project } />)
+      return (
+        <div>
+          <h3>Projects</h3>
+          <ul className="collection">
+            { projects }
+          </ul>
+        </div>
+      )
+    }
+  }
+  
+  const mapStateToProps = state => {
+    return {
+      projects: state.projects
+    }
+  }
+  
+  
+  export default connect(mapStateToProps, { fetchProjects })(Resume)
