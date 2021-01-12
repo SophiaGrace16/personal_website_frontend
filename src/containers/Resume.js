@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import Education from '../components/resumeParts/Education'
 import Experience from '../components/resumeParts/Experience'
 import { connect } from 'react-redux'
-import { fetchEducations } from '../actions/index'
-import { fetchExperiences } from '../actions/index'
+import { fetchEducations, fetchExperiences } from '../actions/index'
 
 
 
@@ -47,4 +46,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps, { fetchEducations }, { fetchExperiences })(Resume)
+export default connect(mapStateToProps, { fetchEducations, fetchExperiences })(Resume)
