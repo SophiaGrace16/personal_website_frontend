@@ -27,6 +27,7 @@ class App extends Component {
               {/* <Route exact path="/pets/:id" render={ props => <PetShow {...props} pets={ this.state.pets } />} /> */}
             </Switch>
           </div>
+          <Footer />
         </Router>
       );
     }
