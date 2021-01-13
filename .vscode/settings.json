@@ -4,6 +4,7 @@
         "middlewares",
         "noopener",
         "noreferrer",
+        "payqmv",
         "webfonts"
     ]
 }
