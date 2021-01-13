@@ -6,6 +6,9 @@ containers are the larger
 - Create a route and hard code what I want in it
 - comments as CRUD
 
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:ital,wght@0,200;0,500;1,200&family=Yeseva+One&display=swap" rel="stylesheet">
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

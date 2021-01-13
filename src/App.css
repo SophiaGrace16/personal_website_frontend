@@ -1,7 +1,41 @@
-.footer{
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One');
+body{
+  margin: 0;
+  font-family: 'Poiret One', cursive;
+  background-color: rgb(226, 214, 202);
+}
+
+h3 {
   text-align: center;
-  margin-top: 1rem;
-  padding: .1rem;
+}
+
+nav {
+  text-align: center;
+  background-color: rgb(163, 101, 78);
+  position: relative;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-bottom:rgb(11, 42, 51);
+  border-bottom-style: solid;
+}
+
+.navbutton {
+  margin: 1rem;
+  font-family: 'Poiret One', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+.navbutton:hover {
+  opacity: .4;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0rem;
   background-color: rgb(216, 199, 183);
   position: fixed;
   bottom: 0;
@@ -9,8 +43,15 @@
   width: 100%;
 }
 
+.signature {
+  text-align: left;
+}
 .social {
-  widows: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin: 1rem;
-};
+}
+
+img.social:hover {
+  opacity: .5;
+}
