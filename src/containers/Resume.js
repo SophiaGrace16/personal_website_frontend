@@ -17,6 +17,9 @@ export class Resume extends Component {
     const experiences = this.props.experiences.map(( experience, i ) => <Experience key={i} experience={ experience } />)
     return (
       <div>
+        <div className="heading">
+          <img src="https://i.imgur.com/FX6xbNY.png" className="header"/>
+        </div>
         <h3>Technical Skills</h3>
         <ul> 
           {/* extract into stateless component */}

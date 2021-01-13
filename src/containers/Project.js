@@ -26,4 +26,4 @@ export class Resume extends Component {
   }
   
   
-  export default connect(mapStateToProps, { fetchProjects })(Resume)
+  export default connect(mapStateToProps, { fetchProjects })(Project)

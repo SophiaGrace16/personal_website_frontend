@@ -1,29 +1,30 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux'
 
-export default class ProjectShow extends Component {
-  constructor(props) {
-    super(props);
+const ProjectShow = ({ match }) => {
+  const { projectId } = match.params
 
-    let paramsId = parseInt(this.props.match.params.id)
-    let project = props.projects.find( project => project.id === paramsId);
+  const project = useSelector(state =>
+    state.projects.find(project => project.id === projectId)
+  )
 
-    this.state = {
-      project: project ? project : { name: 'N/A', age: 'N/A', species: 'N/A'}
-    }
-  }
-
-
-  render() {
-    const { imageLink, projectName, summary, githubLink, demoLink } = this.state.project;
+  if (!project) {
     return (
-    <div>
-      <img src={imageLink} alt= "image" className="project-img"/>
-      <b>{projectName}</b> <br />
-      Description: {summary}<br />
-      <a href={githubLink} target="_blank">Github Repository</a><br />
-      <a href={demoLink} target="_blank">Video Demonstration</a>  
-    </div>
-      
+      <section>
+        <h2>Uh oh! We could not find the project you wanted!</h2>
+      </section>
     )
   }
+
+  return (
+  <div>
+    <img src={imageLink} alt= "image" className="project-img"/>
+    <b>{projectName}</b> <br />
+    Description: {summary}<br />
+    <a href={githubLink} target="_blank">Github Repository</a><br />
+    <a href={demoLink} target="_blank">Video Demonstration</a>  
+  </div>
+  )
 }
+
+export default ProjectShow

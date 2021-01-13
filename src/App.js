@@ -19,7 +19,8 @@ class App extends Component {
               <Route exact path="/" component={ Home } />
               <Route exact path="/resume" component={ Resume } />
               <Route exact path="/projects" component={ Project } />
-              <Route exact path="/projects/:id" render={ props => <ProjectShow {...props} projects={ this.state.projects } />} />
+              <Route exact path="/projects/:projectId" component={ProjectShow} />
+              <Redirect to="/" />
             </Switch>
           </div>
           <Footer />

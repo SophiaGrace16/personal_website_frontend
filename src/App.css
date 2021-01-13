@@ -59,6 +59,7 @@ nav {
 }
 
 /* Project */
+
 .project-img{
   float: left;
   height: 10rem;
@@ -69,7 +70,7 @@ nav {
   text-align: center;
   height: 60%;
   width: 60%;
-  box-shadow: 10px 10px rgb(92, 105, 95);
+  box-shadow: 20px 20px rgb(92, 105, 95);
 }
 
 .project-item {
