@@ -11,11 +11,9 @@ export class Resume extends Component {
     render() {
       const projects = this.props.projects.map(( project, i ) => <Project key={i} project={ project } />)
       return (
-        <div>
-          <h3>Projects</h3>
-          <ul className="collection">
+        <div className="heading">
+          <img src="https://i.imgur.com/Aa2MXza.png" className="header"/>
             { projects }
-          </ul>
         </div>
       )
     }

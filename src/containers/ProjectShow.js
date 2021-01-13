@@ -1,28 +1,29 @@
 import React, { Component } from 'react'
 
-export class PetShow extends Component {
+export default class ProjectShow extends Component {
   constructor(props) {
     super(props);
 
-    let paramsId = parseInt(this.props.match.params.id, 10)
-    let pet = props.pets.find( pet => pet.id === paramsId);
+    let paramsId = parseInt(this.props.match.params.id)
+    let project = props.projects.find( project => project.id === paramsId);
 
     this.state = {
-      pet: pet ? pet : { name: 'N/A', age: 'N/A', species: 'N/A'}
+      project: project ? project : { name: 'N/A', age: 'N/A', species: 'N/A'}
     }
   }
 
 
   render() {
-    const { name, age, species } = this.state.pet;
+    const { imageLink, projectName, summary, githubLink, demoLink } = this.state.project;
     return (
-      <div>
-        <h3>{ name }</h3>
-        <p>Age: { age }</p>
-        <p>Species: { species }</p>
-      </div>
+    <div>
+      <img src={imageLink} alt= "image" className="project-img"/>
+      <b>{projectName}</b> <br />
+      Description: {summary}<br />
+      <a href={githubLink} target="_blank">Github Repository</a><br />
+      <a href={demoLink} target="_blank">Video Demonstration</a>  
+    </div>
+      
     )
   }
 }
-
-export default PetShow

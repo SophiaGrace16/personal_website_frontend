@@ -2,16 +2,14 @@ import React from 'react'
 
 const Project = ({ project }) => {
     return (
-    <div className="collection-item">
-      <img src={project.imageLink} alt= "image" className="projectimg"/>
-      <b>{project.projectName}</b> <br />
-      Description: { project.summary}<br />
-      <a href={project.githubLink} target="_blank">Github Repository</a><br />
-      <a href={project.demoLink} target="_blank">Video Demonstration</a>
+    <div className="project-item">
+        <h4>{project.projectName}</h4>
+      <img src={project.imageLink} alt= "image" className="project-main"/>
+      
     </div>
     
     );
 }
 
 
-export default (Project)
+export default Project
