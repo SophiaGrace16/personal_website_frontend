@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One');
+
+/* General Text */
 body{
   margin: 0;
   font-family: 'Poiret One', cursive;
@@ -8,6 +10,17 @@ body{
 h3 {
   text-align: center;
 }
+
+.heading{
+  text-align: center;
+}
+.header {
+  margin-top: 3rem;
+  height: 30%;
+  width: 30%
+}
+
+/* Nav Bar */
 
 nav {
   text-align: center;
@@ -21,20 +34,6 @@ nav {
   border-bottom-style: solid;
 }
 
-.collection-item {
-  margin: 1rem;
-  padding: 1rem;
-  position: relative;
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: rgb(226, 214, 202);
-  background-clip: border-box;
-  border: 1px solid rgb(0, 0, 0);
-}
-
 .navbutton {
   margin: 1rem;
   font-family: 'Poiret One', cursive;
@@ -46,11 +45,7 @@ nav {
   opacity: .4;
 }
 
-.projectimg{
-  float: left;
-  height: 10rem;
-  width: 15rem;
-}
+/* Footer */
 
 .footer {
   text-align: center;
@@ -62,6 +57,36 @@ nav {
   left: 0;
   width: 100%;
 }
+
+/* Project */
+.project-img{
+  float: left;
+  height: 10rem;
+  width: 15rem;
+}
+
+.project-main{
+  text-align: center;
+  height: 60%;
+  width: 60%;
+  box-shadow: 10px 10px rgb(92, 105, 95);
+}
+
+.project-item {
+  text-align: center;
+  margin: 1rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  background-color: rgb(226, 214, 202);
+  border-bottom-style: ridge;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(11, 42, 51);
+  
+}
+
 
 .signature {
   text-align: left;

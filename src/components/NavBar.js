@@ -7,7 +7,6 @@ export class NavBar extends Component {
       <nav className="navbar">
         <img src="https://i.imgur.com/rNcgEZG.png" className = "signature"/><br />
             <NavLink to="/" className="navbutton">Home</NavLink>
-            <NavLink to="/links" className="navbutton">Links</NavLink>
             <NavLink to="/resume" className="navbutton">Resume</NavLink>
             <NavLink to="/projects" className="navbutton">Projects</NavLink>
       </nav>
