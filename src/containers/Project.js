@@ -3,7 +3,7 @@ import { fetchProjects } from '../actions/index'
 import Project from '../components/Project'
 import { connect } from 'react-redux'
 
-export class Resume extends Component {
+export class Portfolio extends Component {
     componentDidMount(){
       this.props.fetchProjects()
     }
@@ -26,4 +26,4 @@ export class Resume extends Component {
   }
   
   
-  export default connect(mapStateToProps, { fetchProjects })(Project)
+  export default connect(mapStateToProps, { fetchProjects })(Portfolio)

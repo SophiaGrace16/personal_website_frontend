@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './containers/Home';
 import Project from './containers/Project';
 import Resume from './containers/Resume';
-import ProjectShow from './containers/ProjectShow';
+import Projectshow from './containers/ProjectShow';
 import './App.css';
 
 class App extends Component {
@@ -19,8 +19,7 @@ class App extends Component {
               <Route exact path="/" component={ Home } />
               <Route exact path="/resume" component={ Resume } />
               <Route exact path="/projects" component={ Project } />
-              <Route exact path="/projects/:projectId" component={ProjectShow} />
-              <Redirect to="/" />
+              <Route exact path="/projects/:projectId" component={Projectshow} />
             </Switch>
           </div>
           <Footer />

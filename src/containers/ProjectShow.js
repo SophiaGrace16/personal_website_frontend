@@ -4,9 +4,7 @@ import { useSelector } from 'react-redux'
 const ProjectShow = ({ match }) => {
   const { projectId } = match.params
 
-  const project = useSelector(state =>
-    state.projects.find(project => project.id === projectId)
-  )
+  const project = useSelector((state) => state.projects.find(project => project.id === projectId))
 
   if (!project) {
     return (
@@ -18,11 +16,11 @@ const ProjectShow = ({ match }) => {
 
   return (
   <div>
-    <img src={imageLink} alt= "image" className="project-img"/>
-    <b>{projectName}</b> <br />
-    Description: {summary}<br />
-    <a href={githubLink} target="_blank">Github Repository</a><br />
-    <a href={demoLink} target="_blank">Video Demonstration</a>  
+    <img src={project.imageLink} alt= "image" className="project-img"/>
+    <b>{project.projectName}</b> <br />
+    Description: {project.summary}<br />
+    <a href={project.githubLink} target="_blank">Github Repository</a><br />
+    <a href={project.demoLink} target="_blank">Video Demonstration</a>  
   </div>
   )
 }
