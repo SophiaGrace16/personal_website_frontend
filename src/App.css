@@ -21,6 +21,20 @@ nav {
   border-bottom-style: solid;
 }
 
+.collection-item {
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(226, 214, 202);
+  background-clip: border-box;
+  border: 1px solid rgb(0, 0, 0);
+}
+
 .navbutton {
   margin: 1rem;
   font-family: 'Poiret One', cursive;
@@ -32,12 +46,18 @@ nav {
   opacity: .4;
 }
 
+.projectimg{
+  float: left;
+  height: 10rem;
+  width: 15rem;
+}
+
 .footer {
   text-align: center;
   margin-top: 2rem;
   padding: 0rem;
   background-color: rgb(216, 199, 183);
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
