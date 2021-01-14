@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Education from '../components/resumeParts/Education'
 import Experience from '../components/resumeParts/Experience'
+import Tech from '../components/resumeParts/Tech'
 import { connect } from 'react-redux'
 import { fetchEducations, fetchExperiences } from '../actions/index'
 
@@ -21,13 +22,7 @@ class Resume extends Component {
           <img src="https://i.imgur.com/FX6xbNY.png" className="header"/>
         </div>
         <h3>Technical Skills</h3>
-        <ul> 
-          {/* extract into stateless component */}
-        <p> Ruby, Rails, SQL, JavaScript, React, Bootstrap, OOP, BDD, TDD, CRUD, HTML5, CSS3, Git, MVC Backend
-            Understanding of: Web Accessibility Standards, Photo Editing Software, Microsoft Office Suite, Google Suite, Novice Experience with Adobe Suite
-        </p>
-        </ul>
-        
+        <Tech/>
         <h3>Education</h3>
         <ul className="collection">
           { educations }
