@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import About from './components/homeParts/About.js'
+import About from '../components/About'
 
-export class Home extends Component {
+class Home extends Component {
   render() {
     return (
-      <div>
-        <About/>
-      </div>
+        <div>
+          <About/>
+        </div>
     )
   }
 }
