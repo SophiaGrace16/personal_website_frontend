@@ -6,7 +6,7 @@ import { fetchEducations, fetchExperiences } from '../actions/index'
 
 
 
-export class Resume extends Component {
+class Resume extends Component {
   componentDidMount(){
     this.props.fetchEducations()
     this.props.fetchExperiences()
