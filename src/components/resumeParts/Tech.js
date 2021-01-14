@@ -3,11 +3,24 @@ import React, { Component } from 'react'
 class Tech extends Component {
   render() {
     return (
-     <div>
+     <div className="tech-list">
         <ul> 
-        <p> Ruby, Rails, SQL, JavaScript, React, Bootstrap, OOP, BDD, TDD, CRUD, HTML5, CSS3, Git, MVC Backend
-            Understanding of: Web Accessibility Standards, Photo Editing Software, Microsoft Office Suite, Google Suite, Novice Experience with Adobe Suite
-        </p>
+        <li> Ruby </li>
+        <li> Rails </li>
+        <li> Sinatra </li>
+        <li> SQL </li>
+        <li> Javascript </li>
+        <li> React </li>
+        <li> Redux </li>
+        <li> Object-Oriented Programming </li>
+        <li> Behaviour Driven Development </li>
+        <li> Test Driven Development </li>
+        <li> CRUD - Create, Read, Update, Delete </li>
+        <li> HTML5 </li>
+        <li> CSS3 </li>
+        <li> Git </li>
+        <li> MVC Backend </li>
+        <li> Bootstrap </li>
         </ul>
      </div>
     )

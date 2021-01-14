@@ -11,13 +11,14 @@ h3 {
   text-align: center;
 }
 
+
 .heading{
   text-align: center;
 }
 .header {
-  margin-top: 3rem;
-  height: 30%;
-  width: 30%
+  margin-top: 2rem;
+  height: 50%;
+  width: 50%
 }
 
 /* Nav Bar */
@@ -58,6 +59,16 @@ nav {
   width: 100%;
 }
 
+.social {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+img.social:hover {
+  opacity: .5;
+}
+
 /* Project */
 
 .project-img{
@@ -70,7 +81,16 @@ nav {
   text-align: center;
   height: 60%;
   width: 60%;
+  border: rgb(251, 245, 233);
+  border-style: solid;
   box-shadow: 20px 20px rgb(92, 105, 95);
+}
+
+.project-main:hover{
+  opacity: .7;
+  box-shadow: 20px 20px rgb(11, 42, 51);
+  border: rgb(163, 101, 78);
+  border-style: solid;
 }
 
 .project-item {
@@ -88,16 +108,7 @@ nav {
   
 }
 
-
-.signature {
-  text-align: left;
-}
-.social {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 1rem;
-}
-
-img.social:hover {
-  opacity: .5;
+.project-title {
+  background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgba(163, 101, 78, 0.483) 65%);
+  display:inline-block;
 }
