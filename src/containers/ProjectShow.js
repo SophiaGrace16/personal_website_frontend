@@ -3,8 +3,10 @@ import { useSelector } from 'react-redux'
 
 const ProjectShow = ({ match }) => {
   const { projectId } = match.params
-
-  const project = useSelector((state) => state.projects.find(project => project.id === projectId))
+  const singleProj = parseInt(projectId)-1
+debugger
+  const project = useSelector(state => state.projects[singleProj])
+debugger
 
   if (!project) {
     return (
