@@ -28,16 +28,6 @@ export const fetchProjects = () => {
     }
 }
 
-// export const fetchComments = () => {
-//     return(dispatch) => {
-//         return fetch('http://localhost:3000/projects')
-//         .then(resp => resp.json())
-//         .then(projects => {
-//             dispatch({ type: "SET_PROJECTS", payload: projects })
-//         })
-//     }
-// }
-
 export const addComment = comment => {
     return (dispatch) => {
       fetch(`http://localhost:3000/projects/${comment.project_id}/comments`, {

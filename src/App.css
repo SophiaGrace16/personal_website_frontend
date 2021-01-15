@@ -83,13 +83,25 @@ img.social:hover {
   opacity: .5;
 }
 
-/* Project */
+/* Single Project */
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-column-gap: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(11, 42, 51);
+  border-bottom-width: 1px;
+}
 
 .project-img{
   float: left;
   height: 10rem;
   width: 15rem;
 }
+
+
+/* Project */
 
 .project-main{
   text-align: center;

@@ -1,15 +1,19 @@
 import React from 'react'
-import { fetchComments } from '../actions/index'
-import Comment from '../components/projectParts/Comment'
-import { connect } from 'react-redux'
+// import singleProject from '../components/projectParts/singleProject'
+// import { connect } from 'react-redux'
 import { useSelector } from 'react-redux'
 
 const ProjectShow = ({ match }) => {
   const {projectId}   = match.params
   const singleProj = parseInt(projectId)-1
-debugger
   const project = useSelector(state => state.projects[singleProj])
-debugger
+  const comments = project.comments.map((comment) =>
+    <div key={comment.id}>
+        {comment.name}
+        {comment.content}
+    </div>
+);
+
 
   if (!project) {
     return (
@@ -20,20 +24,38 @@ debugger
   }
 
   return (
-  <div>
-    <img src={project.imageLink} alt= "image" className="project-img"/>
-    <b>{project.projectName}</b> <br />
-    Description: {project.summary}<br />
-    <a href={project.githubLink} target="_blank">Github Repository</a><br />
-    <a href={project.demoLink} target="_blank">Video Demonstration</a>  
-
     <div>
-    
+        <div className="project-wrapper">
+
+            <div>
+                <img src={project.imageLink} alt= "image" className="project-img"/>
+                <b>{project.projectName}</b> <br />
+            </div>
+                
+                
+                Description: {project.summary}<br />
+                <a href={project.githubLink} target="_blank">Github Repository</a><br />
+                <a href={project.demoLink} target="_blank">Video Demonstration</a>  
+                {project.comments.name}
+        </div>
+       
+        <div>
+            {comments}
+        </div>
+
     </div>
 
-
-  </div>
   )
 }
 
+// How do I get the comments to render while linked via the backend
+
 export default ProjectShow
+
+
+
+// const mapStateToProps = state => {
+//     return {
+//       projects: state.comments
+//     }
+//   }
