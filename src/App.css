@@ -23,6 +23,42 @@ h3 {
   background: linear-gradient(180deg, rgba(226, 214, 202,0) 98%, rgb(11, 42, 51) 10%);
 }
 
+/* Home */
+
+.intro-wrapper {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1px;
+}
+
+.hello-img {
+  margin: 2rem;
+  width: 100%;
+}
+
+.about-me{
+  margin: 4rem;
+}
+
+/* Picture Wall */
+
+.picture-wrapper{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  justify-items: center;
+}
+
+.pw-img{
+  width: 80%;
+  border-color: rgb(11, 42, 51);
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 2rem;
+}
+
 /* Nav Bar */
 
 nav {
@@ -37,17 +73,6 @@ nav {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
-
-
-/* .nav-links {
-  text-align: right;
-  align-self: end;
-} */
-/* .nav-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 1px;
-} */
 
 .navbutton {
   margin: 1rem;
