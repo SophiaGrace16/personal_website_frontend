@@ -2,12 +2,13 @@ import React from 'react'
 
 const Education = ({ education }) => {
     return (
-    <li className="collection-item">
-      School: {education.school}<br />
-      School Location: { education.location} <br />
-      Dates Attended: { education.startDate} to { education.endDate}<br />
-      Degree: { education.degree } <br />
-    </li>
+      <div>
+          <div className="education-list">
+                <h4 className="education-subhead">{ education.degree }</h4> <br/>
+                {education.school} | { education.location} | { education.startDate} to { education.endDate}
+          </div>
+      </div>
+    
     );
 }
 

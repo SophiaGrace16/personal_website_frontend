@@ -3,7 +3,7 @@ import { fetchProjects } from '../actions/index'
 import Project from '../components/projectParts/Project'
 import { connect } from 'react-redux'
 
-export class Portfolio extends Component {
+class Portfolio extends Component {
     componentDidMount(){
       this.props.fetchProjects()
     }
@@ -12,7 +12,7 @@ export class Portfolio extends Component {
       const projects = this.props.projects.map(( project, i ) => <Project key={i} project={ project } />)
       return (
         <div className="heading">
-          <img src="https://i.imgur.com/Aa2MXza.png" className="header"/>
+          <img src="https://i.imgur.com/VV0O6JW.png" className="header"/>
             { projects }
         </div>
       )

@@ -20,7 +20,7 @@ class Resume extends Component {
       <div>
 
         <div className="heading">
-          <img src="https://i.imgur.com/FX6xbNY.png" className="header"/>
+          <img src="https://i.imgur.com/uM5jQ7T.png" className="header"/>
         </div>
 
         <div>
@@ -29,22 +29,30 @@ class Resume extends Component {
             <Tech/>
           </div>
 
-          <div className="resume-obj">
-            <h3 className="resume-heading"> Education</h3>
-              <ul className="collection">
-                { educations }
-              </ul>
+          <div className="experience-wrapper">
+
+              <div className ="experience-obj">
+                  <h2 className="experience-heading">Experiences</h2>
+              </div>
+
+              <div className="resume-obj">
+                  { experiences }
+              </div>
           </div>
 
-          <div className="resume-obj">
-            <h3 className="resume-heading">Experience</h3>
-              <ul className="collection">
-                { experiences }
-              </ul>
+
+          <div className="education-wrapper">
+              <div className ="education-obj">
+                <h2 className="education-heading">Education</h2>
+              </div>
+
+              <div className="resume-obj">
+                  { educations }
+              </div>
           </div>
 
         </div>
-
+        
       </div>
       
 

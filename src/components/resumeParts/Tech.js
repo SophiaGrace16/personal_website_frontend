@@ -6,11 +6,11 @@ class Tech extends Component {
     <div>
         <div className="tech-wrapper">
             <div className ="tech-obj">
-                <h3 className="tech-heading">Technologies</h3>
+                <h2 className="tech-heading">Technologies</h2>
             </div>
             
             <div className="tech-list">
-                <h5 className="tech-subhead">Languages & Programming Skills</h5>
+                <h4 className="tech-subhead">Languages & Programming Skills</h4>
                     <ul> 
                         <li> Ruby </li>
                         <li> Rails </li>
@@ -32,7 +32,7 @@ class Tech extends Component {
             </div>
 
             <div className="tech-list">
-                <h5 className="tech-subhead">Experience With</h5>
+                <h4 className="tech-subhead">Experience With</h4>
                     <ul>
                         <li>Web Accessibility Standards</li>
                         <li>Photo Editing Software</li>

@@ -35,7 +35,19 @@ nav {
   padding: 1rem;
   border-bottom:rgb(11, 42, 51);
   border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
+
+
+/* .nav-links {
+  text-align: right;
+  align-self: end;
+} */
+/* .nav-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1px;
+} */
 
 .navbutton {
   margin: 1rem;
@@ -121,10 +133,15 @@ img.social:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(11, 42, 51);
+  border-bottom-width: 1px;
 }
 
 .tech-list{
   float: left;
+   margin-bottom: 1rem;
+   margin-right: 2rem;
 }
 
 .tech-heading {
@@ -135,6 +152,61 @@ img.social:hover {
 }
 
 .tech-subhead {
+  background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgb(251, 245, 233) 65%);
+  display:inline-block;
+}
+
+/* Experience */
+
+.experience-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(11, 42, 51);
+  border-bottom-width: 1px;
+}
+
+.experience-list{
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.experience-heading {
+  margin-top: 50%;
+  margin-left: 10%;
+  background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgba(163, 101, 78, 0.483) 65%);
+  display:inline-block;
+}
+
+.experience-subhead {
+  background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgb(251, 245, 233) 65%);
+  display:inline-block;
+}
+
+/* Education */
+
+.education-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1px;
+}
+
+.education-list{
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.education-heading {
+  margin-top: 50%;
+  margin-left: 10%;
+  background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgba(163, 101, 78, 0.483) 65%);
+  display:inline-block;
+}
+
+.education-subhead {
   background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgb(251, 245, 233) 65%);
   display:inline-block;
 }
