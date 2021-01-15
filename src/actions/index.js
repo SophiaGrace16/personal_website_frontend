@@ -28,31 +28,16 @@ export const fetchProjects = () => {
     }
 }
 
-export const addComment = comment => {
+export const addProjects = project => {
     return (dispatch) => {
-      fetch(`http://localhost:3000/projects/${comment.project_id}/comments`, {
+      fetch(`http://localhost:3000/projects/new`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(comment)
+        body: JSON.stringify(project)
       })
         .then(resp => resp.json())
-        .then(newComment => dispatch({ type: 'ADD_COMMENT', payload: newComment }))
+        .then(newProject => dispatch({ type: 'ADD_PROJECT', payload: newProject}))
     }
   }
-
-  export const removeComment = comment => {
-    return(dispatch) => {
-        return fetch(`http://localhost:3000/projects/${comment.project_id}/comments`,{
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(resp => resp.json())
-        .then(comment => {
-            dispatch({ type: "REMOVE_PET", payload: comment.id })
-        })
-    }
-}
