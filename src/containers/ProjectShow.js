@@ -1,4 +1,7 @@
 import React from 'react'
+import { fetchComments } from '../actions/index'
+import Comment from '../components/projectParts/Comment'
+import { connect } from 'react-redux'
 import { useSelector } from 'react-redux'
 
 const ProjectShow = ({ match }) => {
@@ -23,6 +26,12 @@ debugger
     Description: {project.summary}<br />
     <a href={project.githubLink} target="_blank">Github Repository</a><br />
     <a href={project.demoLink} target="_blank">Video Demonstration</a>  
+
+    <div>
+    
+    </div>
+
+
   </div>
   )
 }
