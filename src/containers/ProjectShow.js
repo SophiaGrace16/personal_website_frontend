@@ -1,19 +1,19 @@
 import React from 'react'
-// import singleProject from '../components/projectParts/singleProject'
-// import { connect } from 'react-redux'
 import { useSelector } from 'react-redux'
+
 
 const ProjectShow = ({ match }) => {
   const {projectId}   = match.params
   const singleProj = parseInt(projectId)-1
   const project = useSelector(state => state.projects[singleProj])
-  const comments = project.comments.map((comment) =>
-    <div key={comment.id}>
-        {comment.name}
-        {comment.content}
-    </div>
-);
+//   const comments = project.comments.map((comment) =>
+//     <div key={comment.id}>
+//         {comment.name}
+//         {comment.content}
+//     </div>
+//     );
 
+    //state.save -- need to save state so that it keeps performance normalized (normalizing data)
 
   if (!project) {
     return (
@@ -27,35 +27,36 @@ const ProjectShow = ({ match }) => {
     <div>
         <div className="project-wrapper">
 
-            <div>
-                <img src={project.imageLink} alt= "image" className="project-img"/>
-                <b>{project.projectName}</b> <br />
+            <div className="project-spot-one">
+                <h4 className="project-title">{project.projectName}</h4> <br />
+                <img src={project.imageLink} alt= "image" className="project-img"/><br />
             </div>
                 
-                
-                Description: {project.summary}<br />
-                <a href={project.githubLink} target="_blank">Github Repository</a><br />
-                <a href={project.demoLink} target="_blank">Video Demonstration</a>  
-                {project.comments.name}
+            <div className="project-spot-two">
+                <h5>What was this project about?</h5>
+                {project.summary}<br />
+            </div>
+
+            <a href={project.githubLink} target="_blank" ><img src="https://i.imgur.com/2Tqz4Yn.png" className="repo-button"/></a><br />
+
+            
+            <div>
+              <h5>Video Demonstration</h5>
+              <iframe width="560" height="315" src={project.demoLink} frameBorder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture" allowFullScreen />
+            </div>
+           
+
+            {/* <div className="project-spot-four">
+            {comments}
+            </div> */}
+
         </div>
        
-        <div>
-            {comments}
-        </div>
-
     </div>
 
   )
 }
 
-// How do I get the comments to render while linked via the backend
+
 
 export default ProjectShow
-
-
-
-// const mapStateToProps = state => {
-//     return {
-//       projects: state.comments
-//     }
-//   }

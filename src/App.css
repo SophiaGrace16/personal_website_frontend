@@ -86,18 +86,38 @@ img.social:hover {
 /* Single Project */
 
 .project-wrapper {
+  text-align: center;
   display: grid;
-  grid-template-columns: 3fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(11, 42, 51);
-  border-bottom-width: 1px;
 }
 
 .project-img{
-  float: left;
-  height: 10rem;
-  width: 15rem;
+  margin: 1rem;
+  height: 20rem;
+  width: 30rem;
+  border: rgb(251, 245, 233);
+  border-style: solid;
+  box-shadow: 20px 20px rgb(92, 105, 95);
+}
+
+.project-spot-two{
+  margin: 2rem;
+}
+
+.repo-button{
+  margin: 1rem;
+  width: 9rem;
+  height: 3rem;
+  border-style: solid;
+  border-color: rgb(251, 245, 233);
+  border-width: 2px;
+  box-shadow: 5px 5px rgb(11, 42, 51);
+  
+}
+
+.project-subhead{
+  background: linear-gradient(180deg, rgba(226, 214, 202,0) 65%, rgb(251, 245, 233) 65%);
 }
 
 
