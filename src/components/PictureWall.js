@@ -5,19 +5,19 @@ class PictureWall extends Component {
     return (
     <div className="picture-wrapper">
         <div className="pw">
-            <img src="https://i.imgur.com/uot3WlQ.png" className="pw-img"/>
+            <img src="https://i.imgur.com/uot3WlQ.png" className="pw-img-first"/>
         </div>
 
         <div className="pw">
-            <img src="https://i.imgur.com/uNxljcR.png" className="pw-img"/>
+            <img src="https://i.imgur.com/EO7kZtH.png" className="pw-img"/>
         </div>
 
         <div className="pw">
-            <img src="https://i.imgur.com/9IrUAro.png" className="pw-img"/>
+            <img src="https://i.imgur.com/ptothF3.png" className="pw-img"/>
         </div>
 
         <div className="pw">
-            <img src="https://i.imgur.com/PWefaRE.png" className="pw-img"/>
+            <img src="https://i.imgur.com/AuraHD6.png" className="pw-img"/>
         </div>
 
         <div className="pw">
@@ -25,7 +25,7 @@ class PictureWall extends Component {
         </div>
 
         <div className="pw">
-            <img src="https://i.imgur.com/x9TTGtq.png" className="pw-img"/>
+            <img src="https://i.imgur.com/U0RCHeY.png" className="pw-img-last"/>
         </div>
 
     </div>

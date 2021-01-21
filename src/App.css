@@ -23,6 +23,10 @@ h3 {
   background: linear-gradient(180deg, rgba(226, 214, 202,0) 98%, rgb(11, 42, 51) 10%);
 }
 
+.project-form{
+  margin-left:2rem;
+}
+
 /* Home */
 
 .intro-wrapper {
@@ -30,6 +34,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 1px;
+  margin-bottom: 5rem;
 }
 
 .hello-img {
@@ -46,18 +51,48 @@ h3 {
 .picture-wrapper{
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
   justify-items: center;
 }
 
 .pw-img{
   width: 80%;
-  border-color: rgb(11, 42, 51);
+  border-color: rgb(246, 245, 242);
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 1rem;
+}
+
+.pw-img:hover{
+  transform: scale(2) translateY(-1.5rem);
+}
+
+.pw-img-first{
+  width: 80%;
+  border-color: rgb(246, 245, 242);
   border-style: solid;
   border-width: 2px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
+
+.pw-img-first:hover{
+  transform: scale(2) translateY(-1.5rem) translateX(2rem);
+}
+
+.pw-img-last{
+  width: 80%;
+  border-color: rgb(246, 245, 242);
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 1rem;
+}
+
+.pw-img-last:hover{
+  transform: scale(2) translateY(-1.5rem) translateX(-2rem);
+}
+
+
 
 /* Nav Bar */
 

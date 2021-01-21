@@ -1,6 +1,6 @@
 # Personal Website - Final Project
 * This file contains the <b>Front End code</b> for this project
-* To see the <b>Back End Code</b> click here >> (https://github.com/SophiaGrace16/personal_website_backend.git)
+* To see the <b>Back End Code</b> click here >> (https://github.com/SophiaGrace16/final_personal_website_backend.git)
 
 ## Installation
 

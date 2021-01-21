@@ -9,6 +9,7 @@ const Project = ({ project }) => {
         <img src={project.imageLink} alt= "image" className="project-main"/>
         </Link>
     </div>
+    
     );
 }
 

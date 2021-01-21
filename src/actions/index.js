@@ -28,9 +28,9 @@ export const fetchProjects = () => {
     }
 }
 
-export const addProjects = project => {
+export const addProject = project => {
     return (dispatch) => {
-      fetch(`http://localhost:3000/projects/new`, {
+      fetch('http://localhost:3000/projects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
