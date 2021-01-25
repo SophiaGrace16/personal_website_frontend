@@ -22,7 +22,6 @@ class App extends Component {
               <Route exact path="/projects" component={ Project } />
               <Route exact path="/projects/:projectId" component={Projectshow} />
               <Route exact path="/newproject" component={Projectnew} />
-
             </Switch>
           </div>
           <Footer />

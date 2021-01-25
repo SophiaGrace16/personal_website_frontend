@@ -1,3 +1,4 @@
+//I can return a function here because of thunk-ity thunk
 export const fetchEducations = () => {
     return(dispatch) => {
         return fetch('http://localhost:3000/educations')

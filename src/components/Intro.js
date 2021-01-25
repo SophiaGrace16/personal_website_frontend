@@ -13,7 +13,18 @@ class Intro extends Component {
           </div>
 
           <div className="about-me">
-            Hi there! My name is Sophia. I am a full-stack web developer. 
+
+            <b className="about-title">About Me</b>
+
+            <p>
+              <b className="about-subtitle">Teacher turned Fullstack Developer</b>
+            </p> 
+
+            <p>
+              I am experienced in Ruby on Rails and JavaScript based programming. I have a passion for creating innovative, attractive and functional websites- starting from the initial idea, to the design and concept, and finally, creating a finished product. 
+              I am a determined and dedicated life-long learner adept in a wide array of programming languages & web tools.
+            </p>
+             
           </div>
         
         </div>
@@ -29,3 +40,4 @@ class Intro extends Component {
 }
 
 export default Intro
+
