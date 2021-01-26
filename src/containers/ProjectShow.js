@@ -1,6 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+// making use of the match object as a prop thats provided by router 
+// desctructuring that object and making use of the projectId, through match.params
 
 const ProjectShow = ({ match }) => {
   const {projectId} = match.params
@@ -33,7 +35,7 @@ const ProjectShow = ({ match }) => {
 
             <div>
               <h5>Video Demonstration</h5>
-              <iframe width="560" height="315" src={project.demoLink} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+              <iframe width="560" height="315" src={project.demoLink} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
 
         </div>
