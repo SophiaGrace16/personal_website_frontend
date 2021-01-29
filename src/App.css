@@ -5,6 +5,7 @@
 body{
   margin: 0;
   font-family: 'Poiret One', cursive;
+  font-weight: 600;
   background-color: rgb(226, 214, 202);
 }
 
@@ -138,6 +139,7 @@ nav {
   position: relative;
   margin: 1rem;
   font-family: 'Poiret One', cursive;
+  font-weight: 800;
   text-decoration: none;
   color:rgb(7, 27, 33);
 }

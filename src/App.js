@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/pageParts/NavBar';
 import Footer from './components/pageParts/Footer';
 import Home from './containers/Home';
-import Project from './containers/Project';
+import Portfolio from './containers/Portfolio';
 import Resume from './containers/Resume';
 import Projectshow from './containers/ProjectShow';
 import Projectnew from './containers/ProjectNew';
@@ -19,7 +19,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={ Home } />
               <Route exact path="/resume" component={ Resume } />
-              <Route exact path="/projects" component={ Project } />
+              <Route exact path="/portfolio" component={ Portfolio } />
               <Route exact path="/projects/:projectId" component={Projectshow} />
               <Route exact path="/newproject" component={Projectnew} />
             </Switch>

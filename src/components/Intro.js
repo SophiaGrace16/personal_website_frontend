@@ -9,7 +9,7 @@ const Intro = () => {
         <div className="intro-wrapper">
 
           <div className="hello-spot">
-            <img src="https://i.imgur.com/HBJhG8x.png" className="hello-img"/>
+            <img src="https://i.imgur.com/orckL16.png" className="hello-img"/>
           </div>
 
           <div className="about-me">

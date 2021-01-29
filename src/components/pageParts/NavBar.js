@@ -14,8 +14,8 @@ const NavBar = () => {
         <div className="nav-links">
             <NavLink to="/" className="navbutton">Home</NavLink>
             <NavLink to="/resume" className="navbutton">Resume</NavLink>
-            <NavLink to="/projects" className="navbutton">Portfolio</NavLink>
-            <NavLink to="/newproject" className="navbutton">New</NavLink>
+            <NavLink to="/portfolio" className="navbutton">Portfolio</NavLink>
+            {/* <NavLink to="/newproject" className="navbutton">New</NavLink> */}
         </div>
             
       </nav>
