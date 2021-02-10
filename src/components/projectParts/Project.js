@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 class Project extends Component {
 
-    constructor() {
-            super();
-            this.state = {
-                likes: 0
-            };
-    }
+    // constructor() {
+    //         super();
+    //         // this.state = {
+    //         //     likes: 0
+    //         // };
+    // }
 
     render() {
         return (
@@ -18,7 +18,7 @@ class Project extends Component {
                 <Link to={`/projects/${this.props.project.id}`}>
                 <img src={this.props.project.imageLink} alt= "image" className="project-main"/>
                 </Link>
-                <button onClick={() => this.setState({ likes: this.state.likes +1})} className="like-button">Like: {this.state.likes}</button>
+                {/* <button onClick={() => this.setState({ likes: this.state.likes +1})} className="like-button">Like: {this.state.likes}</button> */}
         </div>
         );
     }

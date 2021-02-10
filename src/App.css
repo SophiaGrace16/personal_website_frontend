@@ -34,6 +34,8 @@ h3 {
   text-align: center;
   vertical-align: center;
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 1px;
   margin-bottom: 5rem;
@@ -42,13 +44,14 @@ h3 {
 .hello-img {
   margin: 2rem;
   width: 100%;
+  /* box-shadow: 12px 12px 2px 1px rgb(251, 245, 233); */
 }
 
 .about-me{
   margin: 4rem;
   text-align: right;
   background-color: rgba(252, 247, 238, 0.559);
-  padding: 1rem;
+  padding: .5rem;
   box-shadow: 5px 5px rgb(11, 42, 51);
 }
 
@@ -73,6 +76,7 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   justify-items: center;
+  align-items: center;
 }
 
 .pw-img{
@@ -117,11 +121,14 @@ h3 {
 
 nav {
   text-align: center;
-  background-color: rgb(226, 214, 202);
-  background-image: url(https://i.imgur.com/Cna7niW.png) ;
+  background-color: rgba(226, 214, 202, 0.613);
+  background-image: url(https://i.imgur.com/b9aa901.png);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  border-bottom: rgb(11, 42, 51);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
   position: relative;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
